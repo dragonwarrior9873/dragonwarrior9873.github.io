@@ -1,499 +1,1734 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Chris's Portfolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+<html lang="en" class="swup-enabled" data-lt-installed="true">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#2B2B35" />
+  <!-- favicon  -->
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="./assets/css/plugins/font-awesome.min.css" />
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./assets/css/plugins/swiper.min.css" />
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="./assets/css/plugins/fancybox.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>Callum Drury Sr Dev</title>
+  <style id="smooth-scrollbar-style">
+    [data-scrollbar] {
+      display: block;
+      position: relative;
+    }
+
+    .scroll-content {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .scrollbar-track {
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+      background: rgba(222, 222, 222, 0.75);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.5s 0.5s ease-out;
+      transition: opacity 0.5s 0.5s ease-out;
+    }
+
+    .scrollbar-track.show,
+    .scrollbar-track:hover {
+      opacity: 1;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+    }
+
+    .scrollbar-track-x {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+    }
+
+    .scrollbar-track-y {
+      top: 0;
+      right: 0;
+      width: 8px;
+      height: 100%;
+    }
+
+    .scrollbar-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+    }
+  </style>
+</head>
 
 <body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">     
-	        <div class="row align-items-center">
-			    <div class="col">         
-		            <!--img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" /-->
-		            <div class="profile-content">
-		                <h1 class="name">Chris Beal</h1>
-		                <h2 class="desc">Frontend & Blockchain Developer</h2>   
-		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="https://t.me/dragonwarrior9873"><i class="fab fa-linkedin"></i></a></li>
-		                    <li class="list-inline-item"><a href="mailto:dragonwarrior9873@gmail.com"><i class="fab fa-google"></i></a></li>
-		                    <li class="list-inline-item"><a href="live:.cid.1f1021b7e207b76a"><i class="fab fa-skype"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/dragonwarrior9873"><i class="fab fa-github"></i></a></li>              
-		                </ul> 
-		            </div><!--//profile-->
-			    </div><!--//col-->
-	            <div class="col-12 col-md-auto">
-		            <div class="dark-mode-switch d-flex">
-						<div class="form-check form-switch mx-auto mx-md-0">
-							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-						</div>
-			        </div>
-	                <!-- <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>         -->
-	            </div><!--//col-->
-	        </div><!--//row-->         
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Chris is a highly skilled Frontend & Blockchain Developer with over 12 years of experience. He is proficient in blockchain technologies including Solidity, Rust, Go and fullstack technologies such as React, Vue.js, and Node.js among others. In a single year, Chris's contributions generated a profit of $200,000 through the development of 30 websites and many kinds of Dapps and intelligent bots in blockchain field. He is enthusiastic in learning new tech stacks and always trying to update himself with the advanced technology. </p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://nxqscan.com/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
-                                
-                                <h3 class="title mb-3"><a href="https://www.nexqloud.io/" target="_blank">NexQloud Chain System <br/> The perfect and secure chain for users</a></h3>
-                                    
-                                <div class="desc text-start">                                    
-                                    <p>NexQloud provides its millions of users with the bright and broader way of secure, reliable transactions and varied, convenient place to play with blockchain activities.</p>
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://www.nexqloud.io/" target="_blank"><i class="fas fa-thumbs-up"></i> Link to my project</a>                 
-                            </div><!--//item-->
-                            
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://projectisla.co" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-0.jpg" alt="ProjectIsla" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://projectisla.co" target="_blank">ProjectIsla - HOSPITAL RESEARCH SYSTEM</a></h3>
-                                    <p class="mb-2">This site uses versatile search tools to explore our database of hospital information and hospital analytics. It creates a list or a map of hospitals that match the interests of customers near their location. This provides data, statistics, and analytics about more than 3,000 hospitals nationwide.</p>
-                                    <p><a class="more-link" href="https://projectisla.co" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://www-lets-playground-shopify-com.myshopify.com" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="GATHRE" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://www-lets-playground-shopify-com.myshopify.com" target="_blank">GATHRE - MAKE SPACE FOR THE WORTHWHILE</a></h3>
-                                    <p class="mb-2">Gathre is simply designed, with a clean debossed logo and simple finishing stitch. Plus, with five Naturals, ten seasonal colors, and quarterly capsule collections, we've got something for every style.</p>
-                                    <p><a class="more-link" href="https://www-lets-playground-shopify-com.myshopify.com" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://sklepbiegacza.pl/" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://sklepbiegacza.pl/" target="_blank">SKLEP BIEGACZA - Footwear Online Shopping</a></h3>
-                                    <p class="mb-2">A service provided by the site electronically, enabling the Customer to use additional functionalities of the Online Store, such as: storing information about the Customer's address data and editing them, access to order history, quick returns and exchanges, notifications and complaint history, Partners Club loyalty program, earlier access to certain Limited Availability Products.</p>
-                                    <p><a class="more-link" href="https://sklepbiegacza.pl/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                             <div class="item row">
-                                <a class="col-md-4 col-12" href="https://www.loulouandcompany.com/" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-3.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://www.loulouandcompany.com/" target="_blank">LouLou - OVER 10,000 HAPPY MOMS & BABIES ☆☆☆☆☆</a></h3>
-                                    <p class="mb-2">I believe every baby deserves a beautiful beginning. I designed our entire Lou Lou collection to be the only newborn essentials mamas reach for to calm and comfort their new baby. Because motherhood should always feel like love. </p>
-                                    <p><a class="more-link" href="https://www.loulouandcompany.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://metadee.io/" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://metadee.io/" target="_blank">METADEE - NFT Marketplace</a></h3>
-                                    <p class="mb-2">With the formation of MetaDee as a NFT marketplace, we are able to embrace a wide range fo NFT artworks and collectibles that are unique, scientifically validated, tradeable, and usable across multiple applications.</p>
-                                    <p><a class="more-link" href="https://metadee.io/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://1love.charity/" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-5.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://1love.charity/" target="_blank">1Love - First Charity Token To Pay Its Holders In BUSD</a></h3>
-                                    <p class="mb-2"> 1Love Is the first charity token ever to pay its holders in BUSD just for holding the token! Along with our Anti Whale Buy Back Function & Automated Liquidity Generation It Sets Us Apart From Anything Else Out There Right Now.</p>
-                                    <p><a class="more-link" href="https://1love.charity/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-                
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="https://gusto.com/" target="_blank">gusto - Set your business up with modern payroll, benefits, and more.</a> <span class="badge badge-theme">ReactJS</span></h3>
-                                <p class="summary">Through one refreshingly easy, integrated platform, I automate and simplify your payroll, benefits, and HR, all while providing expert support. You will get the peace of mind you need to do your best work.</p>
-                                <p><a class="more-link" href="https://gusto.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Browse Now</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://ivisa.com" target="_blank">iVisa - Your one-stop shop for visas, health declarations, and more</a> <span class="badge badge-theme">WooCommerce, SASS</span></h3>
-                                <p class="summary">A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience. The full pull request with every line of code added for WooCommerce compatibility to the awesome theme is available here.</p>
-                                <p><a class="more-link" href="https://ivisa.com" target="_blank"><i class="fas fa-external-link-alt"></i>Browse Now</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://www.investisdigital.com/ " target="_blank">InvestisDigital - Redefine the way you communicate online</a> <span class="badge badge-theme">Nest.js</span></h3>
-                                <p class="summary">Run It. intelligent websites and digital experiences that are rapidly deployed and strategically measured, underpinned by my secure, world-leading Connect. </p>
-                                <p><a class="more-link" href="https://www.investisdigital.com/ " target="_blank"><i class="fas fa-external-link-alt"></i>Browse Now</a></p>
-                            </div><!--//item-->
-                            
-                            <a class="btn btn-cta-secondary" href="https://github.com/dragonwarrior9873">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Senior Frontend Developer - <span class="place"><a href="https://www.bongarde.com/">Bongarde</a></span> <span class="year">(2019-02 - 2024-07)</span></h3>
-                                <p style="padding-left: 1rem">
-                                    Managed and Maintained responsive and accessible web applications utilizing React, Node.js, and Next.js.<br/>
-					•	Architected productive web applications to visualize data from over 80 schools, communicating critical education information to more than 1M users. <br/>
-					•	Collaborated with a team of scientists and researchers to create user-friendly interfaces for over 7 complex environmental data sets, enhancing public understanding of climate change issues and increasing user engagement by 45%. <br/>
-					•	Optimized web application performance to handle large-scale environmental data visualization of up to 10 million data points, improving load times and reducing bounce rates, enhancing overall user experience for an average of 50,000 daily visitors. <br/>
-					•	Monitored and updated main websites, implementing responsive design principles, ensuring seamless access to critical information for mobile users, which now account for 45% of total traffic.<br/>
-                                    </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Frontend Developer - <span class="place"><a href="https://www.lark.com/">Lark Health</a></span> <span class="year">(2017-10 - 2019-01)</span></h3>
-                                <p style="padding-left: 1rem">
-                                    Established cutting-edge communication platform that allowed users to connect, chat in real time, with features like file sharing, video conferencing, and secure authentication mechanisms.<br/>
-					•	Partnered closely with 15 members to develop company's healthcare system using React, Redux, Electron, Node.js, Express, and MySQL.<br/>
-					•	Translated 9 UI/UX design wireframes into actual code using Next.js 13, React, three.js and ensured smooth operation of company infrastructure components resulting speed increase by 35%.<br/>
-					•	Led Agile development methodologies, including daily standups, sprint planning, and retrospective meetings for 2 years.<br/>
-					•	Optimized application performance and refined UI responsiveness through code optimization and caching strategies by 10% using React hook, Jest, CDN links.<br/>
-					•	Conducted code reviews and provided guidance and mentoring to 6 junior developers.<br/>
-					•	Successfully deployed 6 applications on AWS and performed continuous integration and deployment using Docker.<br/>
-                                    </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Frontend Developer - <span class="place"><a href="https://www.loandepot.com/">LoanDepot</a></span> <span class="year">(2015-01 – 2017-10)</span></h3>
-                                <p style="padding-left: 1rem">
-                                    Implemented modernization of legacy codebases by migrating to modern React architectures. Through this effort, improved maintainability and performance of these projects by 45%.<br/>                                
-					•	Published custom 2 plugins, 15 templates and functions for MERN/MEAN stack applications and reviewed code, debugged problems, and corrected issues.<br/>                                
-					•	Translated requirements into responsive web apps utilizing React, Next.js, Electron, MongoDB, Express.js, and Node.js for 22 websites and enhanced using Amazon Web Services, Terraform, CI/CD, Gitlab.<br/>                                
-					•	Leveraged elastic search for one large distributed computing system, large scale design, real time data processing, data storage, ML, and AI to address challenging dataset problems using Python.<br/>                                
-					•	Used Node.js, ORM and SQL, NoSQL to develop and manage databases and executed comprehensive unit and integrated testing using Jest, Enzyme, and Jasmine for 3 years.<br/>                                
-                                    </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Frontend Developer - <span class="place"><a href="#">North Shore Signs & Graphics </a></span> <span class="year">(2013-08 – 2016-05)</span></h3>
-                                <p style="padding-left: 1rem">
-                                  Coordinated closely with 2 designers, 10 product managers, and QA teams to ensure delivery of high-quality software.<br/>
-					•	Designed 4 new user interactive landing pages using React, Next.js, HTML, XHTML, and CSS with web design expertise.<br/>
-					•	Developed B2B, B2C system for individual customers and businesses to make transactions and elevated design resulting in 80% boost in conversion rate.<br/>
-					•	Created onboarding 4 web apps for customers to make transactions secure and safe using React, Vue.js, Node.js and PHP.<br/>
-					•	Managed frontend website development using WordPress, HubSpot, and other editing software.<br/>
-					•	Created over 12 responsive application UIs using React (ES6), Electron, Node.js and functional components libraries with support for switching between Microsoft Azure and Google Cloud APIs, Terraform.<br/>
-					                                    </p>
-                            </div><!--//item-->
-                                                        
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My GitHub</h2>
-                        
-                        <div id="github-graph" class="github-graph">
+  <!-- app -->
+  <div class="art-app art-app-onepage">
+    <!-- mobile top bar -->
+    <div class="art-mobile-top-bar"></div>
 
-                        </div><!--//github-graph-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i> Calgary, Alberta, Canada</li>
-                                <li><i class="fas fa-envelope"></i><a> beamdev24@gmail.com</a></li>
-                                <li><i class="fas fa-phone"></i><a> +1 (406) 205 1630</a></li>
-                                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/chris-beal-41874584/" target="_blank"> Linkedin</a></li>
-                                <li><i class="fab fa-skype"></i><a href="skype:live:.cid.ba9e551e497801d2" target="_blank"> Skype</a></li>
-                                <li><i class="fab fa-github"></i><a href="https://github.com/dragonwarrior9873" target="_blank"> Github</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">JavaScript<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+    <!-- app wrapper -->
+    <div class="art-app-wrapper">
+      <!-- app container end -->
+      <div class="art-app-container">
+        <!-- info bar -->
+        <div class="art-info-bar">
+          <!-- menu bar frame -->
+          <div class="art-info-bar-frame">
+            <!-- info bar header -->
+            <div class="art-info-bar-header">
+              <!-- info bar button -->
+              <a class="art-info-bar-btn" href="#.">
+                <!-- icon -->
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+              <!-- info bar button end -->
+            </div>
+            <!-- info bar header end -->
 
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                               
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Typescript<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 95%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
-									</div><!--//level-bar-->                                   
-                                </div><!--//item-->
+            <!-- info bar header -->
+            <div class="art-header">
+              <!-- avatar -->
+              <div class="art-avatar">
+                <a data-fancybox="avatar" href="./assets/img/face.png" class="art-avatar-curtain">
+                  <img src="./assets/img/face.png" alt="avatar" />
+                  <i class="fas fa-expand"></i>
+                </a>
+                <!-- available -->
+                <div class="art-lamp-light">
+                  <!-- add class 'art-not-available' if not available-->
+                  <div class="art-available-lamp"></div>
+                </div>
+              </div>
+              <!-- avatar end -->
+              <!-- name -->
+              <h5 class="art-name mb-10">Callum Drury</h5>
+              <!-- post -->
+              <div class="art-sm-text">
+                Fullstack & Blockchain <br />React/Angular/Vue/Node/Typescript
+              </div>
+            </div>
+            <!-- info bar header end -->
 
-                                <div class="item">
-                                    <h3 class="level-title">ReactJS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
-									</div><!--//level-bar-->                                   
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; TAILWIND<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Node.js<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 98%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Solidity<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Rust<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 92%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
+            <!-- scroll frame -->
+            <div id="scrollbar2" class="art-scroll-frame">
+              <!-- info bar about -->
+              <!-- <div class="art-table p-15-15">
+                <ul>
+                  <li>
+                    <h6>Residence:</h6>
+                    <span>Texas</span>
+                  </li>
+                  <li>
+                    <h6>City:</h6>
+                    <span>Dallas</span>
+                  </li>
+                  <li>
+                    <h6>Age:</h6>
+                    <span>34</span>
+                  </li>
+                </ul>
+              </div> -->
+              <!-- info bar about end -->
 
-                                <div class="item">
-                                    <h3 class="level-title">Go<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 89%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="https://github.com/dragonwarrior9873"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <aside class="testimonials aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>Chris is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Dina</span><br /><span class="title">Store Apps</span></p>                                                             
-                            </div>
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>Chris exceed my expectation, you did great work. Cant wait to work with you more!</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Jeremi</span><br /><span class="title">PocketChange</span></p>                                                             
-                            </div>
-                            
-                            <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>  -->
-                            
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- language skills -->
+              <div class="art-lang-skills p-30-15">
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog1" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Front-End</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog2" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Back-End</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog3" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Server</h6>
+                </div>
+                <!-- skill end -->
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- hard skills -->
+              <div class="art-hard-skills p-30-15">
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>React</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog1"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Angular</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog2"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Vue</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog3"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Node.JS</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog4"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Typescript</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog5"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- knowledge list -->
+              <ul class="art-knowledge-list p-15-0">
+                <!-- list item -->
+                <li>Full Time Available (50+ hrs)</li>
+                <!-- list item -->
+                <li>Available Remote Position</li>
+                <!-- list item -->
+                <li>Prefer Contract Jobs</li>
+                <!-- list item -->
+                <li>Weekend support if needed</li>
+              </ul>
+              <!-- knowledge list end -->
+
+              <!-- divider -->
+              <!-- <div class="art-ls-divider"></div> -->
+
+              <!-- links frame -->
+              <div class="art-links-frame p-15-15">
+                <!-- download cv button -->
+              </div>
+              <!-- links frame end -->
+            </div>
+            <!-- scroll frame end -->
+
+            <!-- sidebar social -->
+            <!-- <div class="art-ls-social" style="justify-content: space-evenly"> -->
+            <!-- social link -->
+            <!-- social link -->
+            <!-- social link -->
+            <!-- <a href="#." target="_blank"><i class="fab fa-skype"></i></a> -->
+            <!-- social link -->
+            <!-- <a href="#." target="_blank"><i class="fas fa-phone"></i></a> -->
+            <!-- social link -->
+            <!-- <a href="#." target="_blank"><i class="fas fa-envelope"></i></a> -->
+            <!-- </div> -->
+            <!-- sidebar social end -->
+          </div>
+          <!-- menu bar frame end -->
+        </div>
+        <!-- info bar end -->
+
+        <!-- content -->
+        <div class="art-content">
+          <!-- curtain -->
+          <div class="art-curtain"></div>
+
+          <!-- top background -->
+          <div class="art-top-bg" style="background-image: url(./assets/img/bg.jpg)">
+            <!-- overlay -->
+            <div class="art-top-bg-overlay"></div>
+            <!-- overlay end -->
+          </div>
+          <!-- top background end -->
+
+          <!-- swup container -->
+          <div class="transition-fade" id="swup">
+            <!-- scroll frame -->
+            <div id="scrollbar" class="art-scroll-frame">
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- banner -->
+                    <div class="art-a art-banner" style="background-image: url(./assets/img/bg.jpg)">
+                      <!-- banner back -->
+                      <div class="art-banner-back"></div>
+                      <!-- banner dec -->
+                      <div class="art-banner-dec"></div>
+                      <!-- banner overlay -->
+                      <div class="art-banner-overlay">
+                        <!-- main title -->
+                        <div class="art-banner-title">
+                          <!-- title -->
+                          <h1 class="mb-15">
+                            Callum Drury <br />Senior Fullstack & Blockchain Engineer!
+                          </h1>
+                          <!-- suptitle -->
+                          <div class="art-lg-text art-code mb-25">
+                            &lt;<i>code</i>&gt; I build
+                            <span class="txt-rotate" data-period="2000"
+                              data-rotate='[ "web applications.", "hybrid mobile applications.", "desktop applications." ]'></span>&lt;/<i>code</i>&gt;
+                          </div>
+                          <div class="art-buttons-frame">
+                            <!-- button -->
+                            <a href="#." class="art-btn art-btn-md"><span>Explore now</span></a>
+                            <!-- button -->
+                            <a href="#." class="art-link art-white-link art-w-chevron">Hire me</a>
+                          </div>
                         </div>
+                        <!-- main title end -->
+                        <!-- photo -->
+                        <!-- <img src="img/face-2.png" class="art-banner-photo" alt="Your Name"> -->
+                      </div>
+                      <!-- banner overlay end -->
                     </div>
-                </aside>
-                
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor's degree of Computer Science</h3>
-                                <h4 class="university">Hong Kong College of Technology - Hong Kong <span class="year">(2010-2013)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> JavaScript Development</h3>
-                                <h4 class="university">General Assembly <span class="year">(2017)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="list music aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Certificates</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-thumbs-up"></i> <a href="https://www.hackerrank.com/certificates/cea2474f048e" target="_blank">Javascript Certificate</a></li>
-                                <li><i class="fas fa-star"></i> <a href="https://www.hackerrank.com/certificates/775213ab3017" target="_blank">React Certificate</a></li>
-                                <li><i class="fas fa-star"></i> <a href="https://www.hackerrank.com/certificates/166203847fc3" target="_blank">C# Certificate</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list conferences aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Competences</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">Problem-solving</a></li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">Results-driven</a></li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">Time Management</a></li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">Confident</a></li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">Ambitious</a></li>
+                    <!-- banner end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
 
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My Projects' Links</h2>
-                        <div class="content">
-                            <ul class="list-unstyled pb-2">
-                                <li class="pt-1">ECommerce</li>
-                                <hr/>
-                                <li><a href="https://www.projectisla.co" target="_blank"><i class="fas fa-external-link-alt"></i>projectisla.co</a></li>
-                                <li><a href="https://www.padi.com/" target="_blank"><i class="fas fa-external-link-alt"></i>padi.co</a></li>
-                                <li><a href="https://www.agoda.com/" target="_blank"><i class="fas fa-external-link-alt"></i>agoda.co</a></li>
-                                <li><a href="https://www.booking.com/" target="_blank"><i class="fas fa-external-link-alt"></i>booking.com</a></li>
-                                <li><a href="https://www-lets-playground-shopify-com.myshopify.com" target="_blank"><i class="fas fa-external-link-alt"></i>lets-playground-shopify-com.myshopify.com</a></li>
-                                <li><a href="https://lou-lou-company.myshopify.com" target="_blank"><i class="fas fa-external-link-alt"></i>lou-lou-company.myshopify.com</a></li>
-                                <li><a href="https://sklepbiegacza.pl/" target="_blank"><i class="fas fa-external-link-alt"></i>sklepbiegacza.pl</a></li>
-                                <li><a href="https://www.whittenchiropractic.net/" target="_blank"><i class="fas fa-external-link-alt"></i>whittenchiropractic.net</a></li>
-                                <li><a href="https://ivisa.com" target="_blank"><i class="fas fa-external-link-alt"></i>ivisa.com</a></li>
-                                <li><a href="https://www.hilton.com/en/ " target="_blank"><i class="fas fa-external-link-alt"></i>hilton.com</a></li>
-                                <li><a href="https://quicktutor.com" target="_blank"><i class="fas fa-external-link-alt"></i>quicktutor.com</a></li>
-                                <li><a href="https://www.investisdigital.com/" target="_blank"><i class="fas fa-external-link-alt"></i>investisdigital.com</a></li>
-                                <li><a href="https://gusto.com/" target="_blank"><i class="fas fa-external-link-alt"></i>gusto.com</a></li>
-                                <li><a href="https://www.fabuwood.com/ " target="_blank"><i class="fas fa-external-link-alt"></i>fabuwood.com</a></li>
-                                <li class="pt-1">WordPress</li>
-                                <hr/>
-                                    <li><a href="	https://desertfruitcompany.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i>desertfruitcompany.com.au</a></li>
-                                    <li><a href="	https://grillmecrazy.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i>grillmecrazy.com.au</a></li>
-                                    <li><a href="	https://opbg.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i>opbg.com.au</a></li>
-                                    <li><a href="	https://www.nzvapor.com/" target="_blank"><i class="fas fa-external-link-alt"></i>www.nzvapor.com</a></li>
-                                    <li><a href="	https://wordpress.org/plugins/digital-signature-for-contact-form-7" target="_blank"><i class="fas fa-external-link-alt"></i>plugins/digitalfor-contact-form-7</a></li>
-                                    <li><a href="	https://wordpress.org/plugins/calculation-for-contact-form-7/" target="_blank"><i class="fas fa-external-link-alt"></i>plugins/calculationcontact-form-7</a></li>
-                                    <li><a href="	https://wordpress.org/plugins/free-gifts-product-for-woocommerce/" target="_blank"><i class="fas fa-external-link-alt"></i>plugins/freeproduct-for-woocommerce</a></li>
-                                    <li><a href="	https://wordpress.org/plugins/product-list-field-for-contact-form-7/" target="_blank"><i class="fas fa-external-link-alt"></i>plugins/product-list-fieldcontact-form-7</a></li>
-                                <li class="pt-1">NFT marketplace</li>
-                                <hr/>
-                                <li><a href="https://smashcash.io/" target="_blank"><i class="fas fa-external-link-alt"></i>smashcash.io</a></li>
-                                <li><a href="https://metadee.io/" target="_blank"><i class="fas fa-external-link-alt"></i>metadee.io</a></li>
-                                <li><a href="https://potluckprotocol.com/" target="_blank"><i class="fas fa-external-link-alt"></i>potluckprotocol.com</a></li>
-                            <li><a href="https://opensea.io/collection/clonex" target="_blank"><i class="fas fa-external-link-alt"></i>https:/collection/clonex</a></li>
-                                <li><a href="https://www.rtfkt.com/" target="_blank"><i class="fas fa-external-link-alt"></i>htrtfkt.com</a></li>
-                                <li><a href="https://latitud.art/" target="_blank"><i class="fas fa-external-link-alt"></i>latitud.art/</a></li>
-                                <li><a href="https://qubismmarketplace.org/" target="_blank"><i class="fas fa-external-link-alt"></i>qubismmarketplace.org</a></li>
-                                <li><a href="https://nft.dontkyc.com" target="_blank"><i class="fas fa-external-link-alt"></i>htdontkyc.com</a></li>
-                                <li><a href="http://nebulaecosystem.com" target="_blank"><i class="fas fa-external-link-alt"></i>nebulaecosystem.com</a></li>
-                                <li><a href="https://1love.charity" target="_blank"><i class="fas fa-external-link-alt"></i>1love.charity</a></li>
-                                <li><a href="https://hyperxnft.web.app/" target="_blank"><i class="fas fa-external-link-alt"></i>web.app</a></li>
-                                <li><a href="https://app.tadao.finance" target="_blank"><i class="fas fa-external-link-alt"></i>tadao.finance</a></li>
-                                <li><a href="https://bsc.brilliantfinance.app/ " target="_blank"><i class="fas fa-external-link-alt"></i>brilliantfinance.app</a></li>
-                                <li><a href="https://www.siouxfallsford.com/" target="_blank"><i class="fas fa-external-link-alt"></i>siouxfallsford.com</a></li>
-                            <li><a href="https://www.bernardihondanatick.com" target="_blank"><i class="fas fa-external-link-alt"></i>bernardihondanatick.com</a></li>
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row p-30-0">
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">10</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Years Experience</h6>
+                    </div>
+                    <!-- couner frame end -->
+                  </div>
+                  <!-- col end -->
 
-                            </ul>
-                            
-                            <hr/>
-                            <p>If you’d like, <strong>please</strong> download <a href="https://drive.google.com/file/d/1hB7I9P2wVSyOiZly0XeB-b1RIdq2bsks/view?usp=sharing" target="_blank">my CV</a>.</p>
-                             
-                             <a class="btn btn-cta-primary btn-download" href="https://drive.google.com/file/d/1hB7I9P2wVSyOiZly0XeB-b1RIdq2bsks/view?usp=sharing" target="_blank"><i class="fas fa-download"></i> Download CV</a>
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Chris Beal</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">130</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Completed Projects</h6>
+                    </div>
+                    <!-- couner frame end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">105</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Happy Customers</h6>
+                    </div>
+                    <!-- couner frame end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">24</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Honors and Awards</h6>
+                    </div>
+                    <!-- couner frame end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title mt-10">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>My Services</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Web Development</h5>
+                        <!-- text -->
+                        <div class="mb-15">
+                          I can build modern web applications with Javascript
+                          frameworks such as React, Angular and Vue.js as well
+                          as backend services with Node.js, Python, PHP and
+                          Ruby on Rails.
+                        </div>
+                        <!-- button -->
+                        <div class="art-buttons-frame">
+                          <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
+                        </div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Mobile Development</h5>
+                        <!-- text -->
+                        <div class="mb-15">
+                          I can build cross-platform mobile applications with
+                          React Native &amp; Ionic frameworks as well as
+                          simple mobile games.
+                        </div>
+                        <!-- button -->
+                        <div class="art-buttons-frame">
+                          <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
+                        </div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Desktop Applications</h5>
+                        <!-- text -->
+                        <div class="mb-15">
+                          I can build cross-platform desktop applications with
+                          Electron.js.
+                        </div>
+                        <!-- button -->
+                        <div class="art-buttons-frame">
+                          <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
+                        </div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Recommendations</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- slider container -->
+                    <div class="swiper-container art-testimonial-slider" style="overflow: visible">
+                      <!-- slider wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-1.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Hubert L</h5>
+                              <div class="art-el-suptitle mb-15">
+                                Product Manager at Wizeline
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Working with Callum has been a pleasure.
+                                Better yet - I alerted them of a minor issue
+                                before going to sleep. The issue was fixed the
+                                next morning. I couldn't ask for better
+                                support. Thank you Artur! This is easily a 5
+                                star freelancer.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- slide end -->
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-2.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Jason A</h5>
+                              <div class="art-el-suptitle mb-15">
+                                CTO at TianCai
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Callum is a skilled developer in a lot of
+                                different areas. He contributed highly
+                                valuable work for us in a complex web app
+                                using react.js. Also, he successfully
+                                developed a Laravel php/js app as fullstack
+                                dev.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- slide end -->
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-3.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Lee Jarvis</h5>
+                              <div class="art-el-suptitle mb-15">
+                                CTO, Co-founder and Technical Advisor at Spark Real Estate Software
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Callum has an amazing discovery and a
+                                pleasure to work with - the project has gone
+                                along smoothly - he came up with ideas and
+                                helped push the project along really well.
+                                Technically superb. Would recommend for any
+                                project
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- slide end -->
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-4.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Rod Lee</h5>
+                              <div class="art-el-suptitle mb-15">
+                                CEO at Asyst Data Group
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Great work done by Callum. What most
+                                impressed me was his approach to unexpected
+                                circumstances in the process of doing the
+                                work. Mature and practical approach which will
+                                lead, hopefully, to additional jobs.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- slide end -->
+                      </div>
+                      <!-- slider wrapper end -->
+                    </div>
+                    <!-- slider container end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- slider navigation -->
+                    <div class="art-slider-navigation">
+                      <!-- left side -->
+                      <div class="art-sn-left">
+                        <!-- slider pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <!-- left side end -->
+
+                      <!-- right side -->
+                      <div class="art-sn-right">
+                        <!-- slider navigation -->
+                        <div class="art-slider-nav-frame">
+                          <!-- prev -->
+                          <div class="art-slider-nav art-testi-swiper-prev">
+                            <i class="fas fa-chevron-left"></i>
+                          </div>
+                          <!-- next -->
+                          <div class="art-slider-nav art-testi-swiper-next">
+                            <i class="fas fa-chevron-right"></i>
+                          </div>
+                        </div>
+                        <!-- slider navigation -->
+                      </div>
+                      <!-- right side end -->
+                    </div>
+                    <!-- slider navigation end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row p-30-0">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Works</h4>
+                      </div>
+                      <!-- title frame end -->
+                      <!-- right frame -->
+                      <div class="art-right-frame">
+                        <!-- filter -->
+                        <div class="art-filter">
+                          <!-- filter link -->
+                          <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".react" class="art-link">React</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".angular" class="art-link">Angular</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".vue" class="art-link">Vue</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".node" class="art-link">Node.js</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".typescript" class="art-link">Typescript</a>
+                        </div>
+                        <!-- filter end -->
+                      </div>
+                      <!-- right frame end -->
+                    </div>
+                    <!-- section title end -->
+                  </div>
+                  <!-- col end -->
+
+                  <div class="art-grid art-grid-3-col art-gallery">
+                    <!-- grid item -->
+                    <div class="art-grid-item react node typescript">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/1.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/1.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Blue Receipt</h5>
+                        <p class="mb-15">
+                          Skills: React, Redux, Typescript, GraphQL, Node.JS
+                        </p>
+                        <!-- button -->
+                        <a href="https://bluereceipt.com" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item react node">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/2.jpg"
+                        class="art-a art-portfolio-item-frame art-vertical">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/2.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Edulastic</h5>
+                        <div class="mb-15">
+                          Skills: React, Redux, D3.JS, Bootstrap, Node.JS
+                        </div>
+                        <!-- button -->
+                        <a href="https://edulastic.com" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item angular">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/3.jpg"
+                        class="art-a art-portfolio-item-frame art-square">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/3.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Smart Member</h5>
+                        <div class="mb-15">
+                          Skills: Angular, PHP, Laravel, Material Design
+                        </div>
+                        <!-- button -->
+                        <a href="https://smartmember.com" class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item react typescript">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/4.jpg"
+                        class="art-a art-portfolio-item-frame art-vertical">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/4.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">TTC Hub</h5>
+                        <div class="mb-15">
+                          Skills: React, Redux, Storybook, GraphQL, Python
+                        </div>
+                        <!-- button -->
+                        <a href="https://ttc-hub.com" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item typescript">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/5.jpg"
+                        class="art-a art-portfolio-item-frame art-vertical">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/5.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Trad3R</h5>
+                        <div class="mb-15">
+                          Skills: Objective C, Firebase, Firestore
+                        </div>
+                        <!-- button -->
+                        <a href="https://apps.apple.com/us/app/trad3r-social-trading-game/id1071254686" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item angular node">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/6.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/6.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Zumper</h5>
+                        <div class="mb-15">
+                          Skills: Angular, Node.JS, HTML5, CSS3, Bootstrap
+                        </div>
+                        <!-- button -->
+                        <a href="https://www.zumper.com/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item typescript vue">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/7.jpg"
+                        class="art-a art-portfolio-item-frame art-square">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/7.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Robotify</h5>
+                        <div class="mb-15">
+                          Skills: Python, Django, Vue, Material UI
+                        </div>
+                        <!-- button -->
+                        <a href="https://www.robotify.com/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item python">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/8.jpg"
+                        class="art-a art-portfolio-item-frame art-square">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/8.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Shabbos Mode</h5>
+                        <div class="mb-15">
+                          Skills: Python, Django, PostgreSQL, AWS S3
+                        </div>
+                        <!-- button -->
+                        <a href="https://shabbosmode.com/" class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item react">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/9.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/9.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Lendi</h5>
+                        <div class="mb-15">
+                          Skills: React, Gatsby, Bootstrap, HTML5, CSS3
+                        </div>
+                        <!-- button -->
+                        <a href="https://www.lendi.com.au/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item react node">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/10.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/10.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">EyeEm</h5>
+                        <div class="mb-15">
+                          Skills: React, Redux, React Hooks, Node.JS, MongoDB
+                        </div>
+                        <!-- button -->
+                        <a href="https://www.eyeem.com/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item angular">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/11.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/11.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Data Licious</h5>
+                        <div class="mb-15">
+                          Skills: Angular, KendoUI, Javascript
+                        </div>
+                        <!-- button -->
+                        <a href="https://www.datalicious.com/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item angular node">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="./assets/img/works/original-size/12.jpg"
+                        class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="./assets/img/works/thumbnails/12.jpg" alt="item" />
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Brightergy</h5>
+                        <div class="mb-15">
+                          Skills: Angular, RxJS, NgRx, Node.JS, MySQL
+                        </div>
+                        <!-- button -->
+                        <a href="https://brightergy.com/" target="_blank"
+                          class="art-link art-color-link art-w-chevron">Visit</a>
+                      </div>
+                      <!-- description end -->
+                    </div>
+                    <!-- grid item end -->
+                  </div>
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Education</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                    <!-- timeline -->
+                    <div class="art-timeline art-gallery" id="history">
+                      <div class="art-timeline-item">
+                        <div class="art-timeline-mark-light"></div>
+                        <div class="art-timeline-mark"></div>
+
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5>Bachelor's Degree in Computer Science</h5>
+                              <div class="art-el-suptitle mb-15">
+                                University of Wales, Bangor
+                              </div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date">September 2010 - May 2013</span>
+                            </div>
+                          </div>
+                          <ul>
+                            <li>Software Programming</li>
+                            <li>Software Analysis and Web Design</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Data Structures and Algorithms</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- timeline end -->
+                  </div>
+
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Work History</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                    <!-- timeline -->
+                    <div class="art-timeline">
+                      <div class="art-timeline-item">
+                        <div class="art-timeline-mark-light"></div>
+                        <div class="art-timeline-mark"></div>
+
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5> KingIT Solutions </h5>
+                              <div class="art-el-suptitle mb-15">
+                                Senior Fullstack & Blockchain Developer
+                              </div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date"> June 2020 - October 2024</span>
+                            </div>
+                          </div>
+                          <ul class="mb-15">
+                            <li>
+                              Managed and Maintained responsive and accessible web applications utilizing
+                              React, Node.js, and Next.js.
+                            </li>
+                            <li>
+                              Architected productive web applications to visualize data from over 80
+                              schools, communicating critical education information to more than 1M users.
+                            </li>
+                            <li>
+                              Collaborated with a team of scientists and researchers to create user-friendly
+                              interfaces for over 7 complex environmental data sets, enhancing public
+                              understanding of climate change issues and increasing user engagement by
+                              45%.
+                            </li>
+                            <li>
+                              Developed app integration with REST / GraphQL
+                              and other APIs for Google Maps, social media
+                              logins, payment processors, and other services.
+                            </li>
+                            <li>
+                              Conducted unit and load testing for high profile
+                              customer facing applications, which reduced
+                              system failure rate by 70%.
+                            </li>
+                            <li>
+                              Architected a cryptocurrency trading platform, implementing WebSocket for
+                              real-time market data updates, and integrating Web3.js for wallet connections,
+                              resulting in a 40% increase in daily trading volume.
+                            </li>
+                          </ul>
+                          <a data-fancybox="recommendation" href="#art-recomendation-popup-1"
+                            class="art-link art-color-link art-w-chevron">Recommendation</a>
+                        </div>
+
+                        <!-- popup -->
+                        <div class="art-recomendation-popup" style="display: none" id="art-recomendation-popup-1">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-1.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Brightergy</h5>
+                              <div class="art-el-suptitle mb-15">
+                                Sr. Front-End Developer
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Working with Callum has been a pleasure.
+                                Better yet - I alerted them of a minor issue
+                                before going to sleep. The issue was fixed the
+                                next morning. I couldn't ask for better
+                                support. Thank you Artur! This is easily a 5
+                                star freelancer.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- popup end -->
+                      </div>
+
+                      <div class="art-timeline-item">
+                        <div class="art-timeline-mark-light"></div>
+                        <div class="art-timeline-mark"></div>
+
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5>TechSmiths</h5>
+                              <div class="art-el-suptitle mb-15">
+                                Fullstack Developer
+                              </div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date"> October 2017 - March 2020</span>
+                            </div>
+                          </div>
+                          <ul class="mb-15">
+                            <li>
+                              Established cutting-edge communication platform that allowed users to
+                              connect, chat in real time, with features like file sharing, video conferencing,
+                              and secure authentication mechanisms.
+                            </li>
+                            <li>
+                              Partnered closely with 15 members to develop company's healthcare system
+                              using React, Redux, Electron, Node.js, Express, and MySQL.
+                            </li>
+                            <li>
+                              Led collaboration with a team of 5 backend developers to architect and
+                              implement a RESTful API optimized for React Native mobile applications,
+                              reducing API call latency by 40%.
+                            </li>
+                            <li>
+                              Translated 9 UI/UX design wireframes into actual code using Next.js 13,
+                              React, three.js and ensured smooth operation of company infrastructure
+                              components resulting speed increase by 35%
+                            </li>
+                            <li>Led Agile development methodologies, including daily standups, sprint
+                              planning, and retrospective meetings for 2 years.
+                            </li>
+                            <li>
+                              Optimized application performance and refined UI responsiveness through
+                              code optimization and caching strategies by 10% using React hook, Jest, CDN
+                              links.
+                            </li>
+                            <li>
+                              Conducted code reviews and provided guidance and mentoring to 6 junior
+                              developers.
+                            </li>
+                            <li>
+                              Successfully deployed 6 applications on AWS and performed continuous
+                              integration and deployment using Docker.
+                            </li>
+                          </ul>
+                          <a data-fancybox="recommendation" href="#art-recomendation-popup-2"
+                            class="art-link art-color-link art-w-chevron">Recommendation</a>
+                        </div>
+
+                        <!-- popup -->
+                        <div class="art-recomendation-popup" style="display: none" id="art-recomendation-popup-2">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-2.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Jason A</h5>
+                              <div class="art-el-suptitle mb-15">
+                                CTO at TianCai
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Callum is a skilled developer in a lot of
+                                different areas. He contributed highly
+                                valuable work for us in a complex, WordPress
+                                based web app using react.js, with a frontend
+                                framework for Elasticsearch called
+                                reactivesearch. Also, he successfully
+                                developed a Laravel php/js app as fullstack
+                                dev.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- popup end -->
+                      </div>
+
+                      <div class="art-timeline-item">
+                        <div class="art-timeline-mark-light"></div>
+                        <div class="art-timeline-mark"></div>
+
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5>Crate47</h5>
+                              <div class="art-el-suptitle mb-15">
+                                Frontend Developer
+                              </div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date"> November 2013 - June 2017</span>
+                            </div>
+                          </div>
+                          <ul class="mb-15">
+                            <li>
+                              Coordinated closely with 2 designers, 10 product managers, and QA teams
+                              to ensure delivery of high-quality software and implemented modernization of
+                              legacy codebases by migrating to modern React architectures. Through this
+                              effort, improved maintainability and performance of these projects by 45%.
+                            </li>
+                            <li>
+                              Executed the design and launch of 20+ responsive and accessible full-stack
+                              applications with Bootstrap and JavaScript; achieved a 30% increase in mobile
+                              user engagement, driving overall site traffic and interaction levels.
+                            </li>
+                            <li>
+                              Designed 4 new user interactive landing pages using React, Next.js, HTML,
+                              XHTML, and CSS with web design expertise.
+                            </li>
+                            <li>
+                              Developed B2B, B2C system for individual customers and businesses to
+                              make transactions and elevated design resulting in 80% boost in conversion
+                              rate.
+                            </li>
+                            <li>
+                              Created onboarding 4 web apps for customers to make transactions secure
+                              and safe using React, Vue.js, Node.js and PHP.
+                            </li>
+                            <li>
+                              Managed frontend website development using WordPress, HubSpot, and
+                              other editing software.
+                            </li>
+                            <li>
+                              Created over 12 responsive application UIs using React (ES6), Electron,
+                              Node.js and functional components libraries with support for switching
+                              between Microsoft Azure and Google Cloud APIs, Terraform.
+                            </li>
+                          </ul>
+                          <a data-fancybox="recommendation" href="#art-recomendation-popup-3"
+                            class="art-link art-color-link art-w-chevron">Recommendation</a>
+                        </div>
+
+                        <!-- popup -->
+                        <div class="art-recomendation-popup" style="display: none" id="art-recomendation-popup-3">
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="./assets/img/testimonials/face-3.jpeg"
+                                alt="face" />
+                              <!-- name -->
+                              <h5>Lee Jarvis</h5>
+                              <div class="art-el-suptitle mb-15">
+                                CTO, Co-founder and Technical Advisor at Spark Real Estate Software
+                              </div>
+                              <!-- text -->
+                              <div class="mb-15">
+                                Callum has an amazing discovery and a
+                                pleasure to work with - the project has gone
+                                along smoothly - he came up with ideas and
+                                helped push the project along really well.
+                                Technically superb. Would recommend for any
+                                project.
+                              </div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side"></div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+                        </div>
+                        <!-- popup end -->
+                      </div>
+                    </div>
+                    <!-- timeline end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row p-30-0">
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Contact information</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+                  </div>
+                  <!-- col end -->
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- contact card -->
+                    <div class="art-a art-card">
+                      <div class="art-table p-15-15">
+                        <ul>
+                          <li>
+                            <h6>Country:</h6>
+                            <span>UK</span>
+                          </li>
+                          <li>
+                            <h6>City:</h6>
+                            <span>Cardiff</span>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- contact card end -->
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Get in touch</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                    <!-- contact form frame -->
+                    <div class="art-a art-card">
+                      <!-- contact form -->
+                      <form id="form" class="art-contact-form">
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- name input -->
+                          <input id="name" name="name" class="art-input" type="text" placeholder="Name" required="" />
+                          <!-- label -->
+                          <label for="name"><i class="fas fa-user"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- email input -->
+                          <input id="email" name="email" class="art-input" type="email" placeholder="Email"
+                            required="" />
+                          <!-- label -->
+                          <label for="email"><i class="fas fa-at"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- message textarea -->
+                          <textarea id="message" name="text" class="art-input" placeholder="Message"
+                            required=""></textarea>
+                          <!-- label -->
+                          <label for="message"><i class="far fa-envelope"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- button -->
+                        <div class="art-submit-frame">
+                          <button class="art-btn art-btn-md art-submit" type="submit">
+                            <span>Send message</span>
+                          </button>
+                          <!-- success -->
+                          <div class="art-success">
+                            Success <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- contact form end -->
+                    </div>
+                    <!-- contact form frame end -->
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- row -->
+                <div class="row">
+                  <!-- col -->
+                  <div class="col-6 col-lg-4">
+                    <!-- brand -->
+                    <img class="art-brand" src="./assets/img/brands/1.png" alt="brand" />
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-4">
+                    <!-- brand -->
+                    <img class="art-brand" src="./assets/img/brands/2.png" alt="brand" />
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-4">
+                    <!-- brand -->
+                    <img class="art-brand" src="./assets/img/brands/3.png" alt="brand" />
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <!-- <div class="col-6 col-lg-3"> -->
+                  <!-- brand -->
+                  <!-- <img class="art-brand" src="./assets/img/brands/1.png" alt="brand"> -->
+                  <!-- </div> -->
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- footer -->
+                <footer>
+                  <!-- copyright -->
+                  <div>© 2022 Callum Drury</div>
+                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
+                </footer>
+                <!-- footer end -->
+              </div>
+              <!-- container end -->
+            </div>
+            <!-- scroll frame end -->
+          </div>
+          <!-- swup container end -->
+        </div>
+        <!-- content end -->
+      </div>
+      <!-- app container end -->
+    </div>
+    <!-- app wrapper end -->
+
+    <!-- preloader -->
+    <div class="art-preloader">
+      <!-- preloader content -->
+      <div class="art-preloader-content">
+        <!-- title -->
+        <h4>Callum Drury</h4>
+        <!-- progressbar -->
+        <div id="preloader" class="art-preloader-load"></div>
+      </div>
+      <!-- preloader content end -->
+    </div>
+    <!-- preloader end -->
+  </div>
+  <!-- app end -->
+  <div id="swupMenu" data-swup="1"></div>
+
+  <!-- jquery js -->
+  <script src="./assets/js/plugins/jquery.min.js"></script>
+  <!-- anime js -->
+  <script src="./assets/js/plugins/anime.min.js"></script>
+  <!-- swiper js -->
+  <script src="./assets/js/plugins/swiper.min.js"></script>
+  <!-- progressbar js -->
+  <script src="./assets/js/plugins/progressbar.min.js"></script>
+  <!-- smooth scrollbar js -->
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- overscroll js -->
+  <script src="./assets/js/plugins/overscroll.min.js"></script>
+  <!-- typing js -->
+  <script src="./assets/js/plugins/typing.min.js"></script>
+  <!-- isotope js -->
+  <script src="./assets/js/plugins/isotope.min.js"></script>
+  <!-- fancybox js -->
+  <script src="./assets/js/plugins/fancybox.min.js"></script>
+  <!-- swup js -->
+  <script src="./assets/js/plugins/swup.min.js"></script>
+
+  <!-- main js -->
+  <script src="./assets/js/main.js"></script>
+
+  <style type="text/css">
+    .txt-rotate>.wrap {
+      border-right: 0.08em solid rgba(215, 205, 240, 0.6);
+      padding-right: 5px;
+    }
+  </style>
 </body>
-</html> 
 
+</html>
